@@ -1,0 +1,25 @@
+<div class="container toolbar border border-secondary">
+    <form (ngSubmit)="Register()" role="form" #f="ngForm">
+      <div class="firstName">
+        <label class="form-label">First Name</label>
+        <input ngModel type="text" class="form-control  border border-secondary" required name="firstName">
+      </div>
+      <div class="lastName">
+        <label class="form-label">Last Name</label>
+        <input ngModel type="text" class="form-control border border-secondary" required name="lastName">
+      </div>
+      <div class="email">
+        <label class="form-label">Email Address</label>
+        <input ngModel type="email" class="form-control  border border-secondary" required name="email">
+      </div>
+      <div class="password">
+        <label class="form-label">Password</label>
+        <input ngModel type="password" class="form-control border border-secondary" required name="password">
+      </div>
+      <div class="confirmPassword">
+        <label class="form-label">Confirm Password</label>
+        <input ngModel type="password" class="form-control border border-secondary" required name="confirmPassword">
+      </div>
+      <button type="submit" class="button border border-secondary">Sign Up</button>
+      </form>
+    </div>
